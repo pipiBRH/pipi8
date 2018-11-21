@@ -5,7 +5,7 @@ steps:
     id: "testing-pipi8"
     env:
     - "GO111MODULE=on" # name of the running container
-    - "GOPATH=$HOME/go"
+    - "GOPATH=/go"
     - "PATH=$PATH:$GOPATH/bin"
 tags:
   - "pipi8"
