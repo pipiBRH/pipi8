@@ -1,10 +1,10 @@
 timeout: 1800s
 steps:
-  - name: "gcr.io/cloud-builders/docker"
-    args: ['build', '-t', 'asia.gcr.io/$PROJECT_ID/pipi8:$TAG_NAME', '.']
-    id: "build-chrome-gcr"
-  - name: "gcr.io/cloud-builders/docker"
-    args: ['push', 'asia.gcr.io/$PROJECT_ID/pipi8:$TAG_NAME']
-    id: "push-proxy-gcr"
+  - name: "gcr.io/cloud-builders/go"
+    args: ["test", "-v", "./src/..."]
+    id: "testing-pipi8"
+    env:
+    - "GO111MODULE=on" # name of the running container
+    - "GOPATH=/go"
 tags:
-  - "pipi8"  
+  - "pipi8"
