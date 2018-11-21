@@ -1,6 +1,6 @@
 timeout: 1800s
 steps:
-  - name: "golang:1.11.1"
+  - name: "gcr.io/cloud-builders/go"
     args: ['test', '-v', './src/...']
     id: "testing-pipi8"
 tags:
