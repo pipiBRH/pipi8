@@ -1,0 +1,7 @@
+*.txt
+*.log
+tempCode*
+.DS_Store
+.vscode
+github.com
+golnag.org
