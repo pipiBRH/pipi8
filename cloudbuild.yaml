@@ -1,7 +1,11 @@
 timeout: 1800s
 steps:
   - name: "gcr.io/cloud-builders/go"
-    args: ['test', '-v', './src/...']
+    args: ["test", "-v", "./src/..."]
     id: "testing-pipi8"
+    env:
+    - "GO111MODULE=on" # name of the running container
+    - "GOPATH=$HOME/go"
+    - "PATH=$PATH:$GOPATH/bin"
 tags:
-  - "pipi8"  
+  - "pipi8"
