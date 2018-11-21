@@ -6,6 +6,5 @@ steps:
     env:
     - "GO111MODULE=on" # name of the running container
     - "GOPATH=/go"
-    - "PATH=$PATH:$GOPATH/bin"
 tags:
   - "pipi8"
