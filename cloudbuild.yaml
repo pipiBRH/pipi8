@@ -9,5 +9,8 @@ steps:
   - name: "gcr.io/cloud-builders/go"
     args: ["test", "-v", "./src/..."]
     id: "testing-pipi8"
+    env:
+    - "GO111MODULE=on" # name of the running container
+    - "GOPATH=/go"
 tags:
   - "pipi8"
