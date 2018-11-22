@@ -4,13 +4,13 @@ steps:
     args: ["mod", "download"]
     id: "download-mod"
     env:
-    - "GO111MODULE=on" # name of the running container
+    - "GO111MODULE=on" 
     - "GOPATH=/go"
   - name: "gcr.io/cloud-builders/go"
     args: ["test", "-v", "./src/..."]
     id: "testing-pipi8"
     env:
-    - "GO111MODULE=on" # name of the running container
+    - "GO111MODULE=on" 
     - "GOPATH=/go"
 tags:
   - "pipi8"
