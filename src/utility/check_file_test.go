@@ -20,15 +20,15 @@ func TestCheckMod(t *testing.T) {
 		t.Error("utility.AcheckModdd FAIL")
 	}
 
-	if checkMod(&filePath) != "dir" {
-		t.Log("utility.AcheckModdd PASS")
-	} else {
-		t.Error("utility.AcheckModdd FAIL")
-	}
+	// if checkMod(&filePath) != "dir" {
+	// 	t.Log("utility.AcheckModdd PASS")
+	// } else {
+	// 	t.Error("utility.AcheckModdd FAIL")
+	// }
 
-	if checkMod(&filePath) == "file" {
-		t.Log("utility.AcheckModdd PASS")
-	} else {
-		t.Error("utility.AcheckModdd FAIL")
-	}
+	// if checkMod(&filePath) == "file" {
+	// 	t.Log("utility.AcheckModdd PASS")
+	// } else {
+	// 	t.Error("utility.AcheckModdd FAIL")
+	// }
 }
