@@ -8,7 +8,19 @@ func TestCheckMod(t *testing.T) {
 	var dirPath = "../flag"
 	var filePath = "../flag/flag.go"
 
-	if checkMod(&dirPath) == "dire" {
+	if checkMod(&dirPath) == "dir" {
+		t.Log("utility.AcheckModdd PASS")
+	} else {
+		t.Error("utility.AcheckModdd FAIL")
+	}
+
+	if checkMod(&dirPath) != "file" {
+		t.Log("utility.AcheckModdd PASS")
+	} else {
+		t.Error("utility.AcheckModdd FAIL")
+	}
+
+	if checkMod(&filePath) != "dir" {
 		t.Log("utility.AcheckModdd PASS")
 	} else {
 		t.Error("utility.AcheckModdd FAIL")
